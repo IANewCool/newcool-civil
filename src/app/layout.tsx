@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Civil - NewCooltura Informada",
-  description: "Derecho civil, calculadora de intereses, plazos procesales y costas judiciales",
+  title: "Derecho Civil Chile | NewCooltura Informada",
+  description: "Derecho civil, calculadora de intereses, plazos procesales y costas judiciales en Chile",
+  keywords: ["derecho civil", "intereses legales", "plazos procesales", "costas judiciales", "juicios civiles"],
+  openGraph: {
+    title: "Derecho Civil Chile - NewCooltura Informada",
+    description: "Calculadora de intereses y plazos procesales",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
